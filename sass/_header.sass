@@ -1,0 +1,77 @@
+.header
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 30px
+    &__logo
+        font-style: normal
+        font-weight: 900
+        font-size: 18px
+        line-height: 22px
+        letter-spacing: 0.03em
+        color: #FFFFFF
+        @media ( max-width: 992px )
+            margin-left: 40px
+            margin-right: 40px
+            z-index: 3
+    &__nav
+        @media ( max-width: 767px )
+            display: none
+    &__link
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 22px
+        letter-spacing: 0.03em
+        color: #FFFFFF
+        padding: 20px 30px
+        border-radius: 5px
+        transition-duration: 0.5s
+        margin-left: 10px
+        &:hover
+            background-color: #232323
+    &__mobile-nav
+        display: none
+        z-index: 2
+        @media ( max-width: 767px )
+            position: absolute
+            padding-bottom: 300px
+            width: 100%
+            top: -775px
+            background-color: #232323
+            font-size: 20px
+            padding-top: 100px
+            display: flex
+            flex-direction: column
+            text-transform: uppercase
+            transition-duration: 0.8s
+            overflow: auto
+        &.active
+            top: 0
+            left: 0
+    &__mobile-link
+        margin-top: 50px
+        margin-bottom: 50px
+        margin-left: 40px
+        color: #fff
+        font-weight: bold
+
+    &__menu-btn
+        display: none
+        z-index: 3
+        @media ( max-width: 767px )
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            // align-items: center
+            height: 30px
+            margin-left: 30px
+            background-color: transparent
+    &__menu-line
+        height: 5px
+        width: 35px
+        background-color: #Fff
+        transition-duration: 0.8s
+.line-focus
+    width: 20px
