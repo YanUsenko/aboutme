@@ -252,7 +252,7 @@ body.hidden {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 198px 0px 98px 0px;
+  padding: 168px 0px 98px 0px;
 }
 
 @media (max-width: 767px) {
@@ -265,6 +265,22 @@ body.hidden {
   .offer__column {
     align-items: start;
     padding: 100px 0px 60px 0px;
+  }
+}
+
+.offer__img {
+  width: 150px;
+  height: 150px;
+  background-image: url(../img/logo/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .offer__img {
+    display: none;
   }
 }
 
