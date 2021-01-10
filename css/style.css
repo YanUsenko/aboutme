@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+.title, .header__logo, .header__link, .header__mobile-link, .offer__title, .offer__subtitle, .about__box-title, .about__text, .footer, .footer a {
+  color: #1D1D1F;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -96,7 +100,7 @@ body.hidden {
 }
 
 .wrapper {
-  background: #1C1C1C;
+  background: #fff;
 }
 
 .wrapper-bg {
@@ -106,11 +110,11 @@ body.hidden {
 }
 
 .wrapper-w {
-  background-color: #fff;
+  background-color: #F9F9F9;
 }
 
 .wrapper-f {
-  background: #232323;
+  background: #1D1D1F;
 }
 
 .title {
@@ -119,7 +123,6 @@ body.hidden {
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
   margin-bottom: 10px;
 }
 
@@ -136,7 +139,7 @@ body.hidden {
 }
 
 .title-b {
-  color: #1C1C1C;
+  color: #fff;
 }
 
 .header__row {
@@ -152,7 +155,6 @@ body.hidden {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
 }
 
 @media (max-width: 992px) {
@@ -175,15 +177,14 @@ body.hidden {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
   padding: 20px 30px;
-  border-radius: 5px;
+  border-radius: 12px;
   transition-duration: 0.5s;
   margin-left: 10px;
 }
 
 .header__link:hover {
-  background-color: #232323;
+  background-color: #E5E5E5;
 }
 
 .header__mobile-nav {
@@ -197,7 +198,7 @@ body.hidden {
     padding-bottom: 300px;
     width: 100%;
     top: -775px;
-    background-color: #232323;
+    background-color: #E5E5E5;
     font-size: 20px;
     padding-top: 100px;
     display: flex;
@@ -217,7 +218,6 @@ body.hidden {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 40px;
-  color: #fff;
   font-weight: bold;
 }
 
@@ -240,8 +240,9 @@ body.hidden {
 .header__menu-line {
   height: 5px;
   width: 35px;
-  background-color: #Fff;
+  background-color: #1D1D1F;
   transition-duration: 0.8s;
+  border-radius: 3px;
 }
 
 .line-focus {
@@ -263,7 +264,6 @@ body.hidden {
 
 @media (max-width: 420px) {
   .offer__column {
-    align-items: start;
     padding: 100px 0px 60px 0px;
   }
 }
@@ -278,20 +278,8 @@ body.hidden {
   margin-bottom: 30px;
 }
 
-@media (max-width: 767px) {
-  .offer__img {
-    display: none;
-  }
-}
-
 .offer__hi span {
   color: #F6E36A;
-}
-
-@media (max-width: 420px) {
-  .offer__hi {
-    margin-left: 30px;
-  }
 }
 
 .offer__title {
@@ -300,7 +288,7 @@ body.hidden {
   font-size: 48px;
   line-height: 59px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -319,8 +307,6 @@ body.hidden {
 @media (max-width: 420px) {
   .offer__title {
     line-height: 150%;
-    padding-right: 30px;
-    margin-left: 30px;
   }
 }
 
@@ -331,7 +317,6 @@ body.hidden {
   line-height: 150%;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
   margin-bottom: 100px;
   max-width: 504px;
 }
@@ -353,9 +338,6 @@ body.hidden {
 
 @media (max-width: 420px) {
   .offer__subtitle {
-    text-align: left;
-    padding-right: 40px;
-    margin-left: 30px;
     margin-bottom: 100px;
   }
 }
@@ -465,9 +447,9 @@ body.hidden {
 }
 
 .about__box {
-  background: #1C1C1C;
-  border-radius: 5px;
-  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 3px 3px 8px -2px rgba(199, 199, 199, 0.7);
   margin-bottom: 30px;
   padding: 40px 42px;
   background-image: url(../img/icons/el-y.svg);
@@ -539,7 +521,6 @@ body.hidden {
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
 }
 
 @media (max-width: 767px) {
@@ -550,11 +531,10 @@ body.hidden {
 
 .about__text {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
   margin-top: 19px;
 }
 
@@ -802,7 +782,6 @@ label.error {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
   padding: 30px;
 }
 
@@ -815,7 +794,6 @@ label.error {
 
 .footer a {
   font-weight: 900;
-  color: #FFFFFF;
 }
 
 .footer__text {
