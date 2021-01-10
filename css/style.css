@@ -196,6 +196,7 @@ body.hidden {
 .header__mobile-nav {
   display: none;
   z-index: 2;
+  overflow: scroll;
 }
 
 @media (max-width: 767px) {
@@ -203,7 +204,7 @@ body.hidden {
     position: absolute;
     padding-bottom: 300px;
     width: 100%;
-    top: -100%;
+    top: -900px;
     background-color: #E5E5E5;
     font-size: 20px;
     padding-top: 100px;
@@ -211,7 +212,6 @@ body.hidden {
     flex-direction: column;
     text-transform: uppercase;
     transition-duration: 0.8s;
-    overflow: auto;
   }
 }
 
@@ -222,7 +222,7 @@ body.hidden {
 
 .header__mobile-link {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-left: 40px;
   font-weight: bold;
 }
